@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ruta Inteligente - Arequipa</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    input, button { margin: 0.5rem 0; padding: 0.5rem; }
+    .resultado { margin-top: 1rem; border: 1px solid #ccc; padding: 1rem; }
+    #map { height: 400px; margin-top: 1rem; }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <h2>Planifica tu ruta en transporte público</h2>
+
+  <label>Origen:</label><br>
+  <input type="text" id="origen" placeholder="Ej: Av. Dolores"><br>
+
+  <label>Destino:</label><br>
+  <input type="text" id="destino" placeholder="Ej: Universidad UNSA"><br>
+
+  <button onclick="consultarRuta()">Buscar ruta</button>
+
+  <div id="map"></div>
+
+  <div class="resultado" id="resultado"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
